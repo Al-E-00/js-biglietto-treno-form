@@ -21,7 +21,7 @@ const inputAge = document.getElementById("age");
 const submitGenera = document.getElementById("submitGenera");
 const submitAnnulla = document.getElementById("submitAnnulla");
 
-const insertName = document.querySelector("nameSurnameIns");
+const insertName = document.getElementById("nameSurnameIns");
 /* Se si clicca sul pulsante Genera devo salvare i dati nelle variabili */
 
 /* Con il pulsante annulla vanno svuotati i campi */
@@ -30,5 +30,5 @@ submitGenera.addEventListener("click", function() {
 
     console.log(inputNameSurname.value, inputKm.value, inputAge.value);
 
-    insertName.innerHTML = inputAge.value;
+    inputNameSurname.textContent = insertName.value
 })
