@@ -51,7 +51,7 @@ submitGenera.addEventListener("click", function() {
     console.log(ticketPrice);
     // stampare il prezzo sul biglietto nuovo
 
-    document.querySelector(".ticketPriceIntoCard").innerHTML = ticketPrice.value;
+    document.querySelector(".ticketPriceIntoCard").innerHTML = ticketPrice;
 
     
 })
