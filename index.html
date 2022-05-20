@@ -17,32 +17,32 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1 class=".text-uppercase">Calcola il prezzo del tuo biglietto</h1>
+                    <h2 class="text-uppercase">Calcola il prezzo del tuo biglietto</h2>
                 </div>
             </div>
 
             <!-- fist row with selection custom data -->
-            <div class="background-light">
+            <div class="bg-light rounded">
                 <div class="row">
                     <div class="d-flex justify-content-center">
-                        <div class="col-3">
+                        <div class="col">
                                 <div class="d-flex flex-column">
-                                    <label for="nameSurname">Nome Cognome</label>
-                                    <input type="text" placeholder="Nome e cognome" id="nameSurname" required>
+                                    <label for="nameSurname" class="align-self-center">Nome Cognome</label>
+                                    <input type="text" placeholder="Nome e cognome" class="nameSurname my-4" required name="userName">
                                 </div>       
                         </div>
 
-                        <div class="col-3">
+                        <div class="col">
                             <div class="d-flex flex-column">
-                                <label for="km">Km da percorrere</label>
-                                <input type="text" placeholder="Km da percorrere" id="km" required>
+                                <label for="km" class="align-self-center">Km da percorrere</label>
+                                <input type="text" placeholder="Km da percorrere" class="km my-4" required name="userKm">
                             </div>
                         </div>
 
-                        <div class="col-3">
+                        <div class="col">
                             <div class="d-flex flex-column">
-                                <label for="age">Fascia d'età</label>
-                                <input type="text" placeholder="Età" id="age" required>
+                                <label for="age" class="align-self-center">Fascia d'età</label>
+                                <input type="text" placeholder="Età" class="age my-4" required name="userAge">
                             </div>
                         </div>
                     
@@ -51,7 +51,7 @@
 
                 <!-- second row with button -->
                 <div class="row">
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center my-4">
                         <div class="col-2">
                             <button type="button" id="submitGenera">Genera</button>
                         </div>
@@ -66,34 +66,36 @@
             <!-- Creare altro biglietto da far apparire SOLO al click di genera -->
 
         <div class="container">
-            <div class="row">
-                <h1 class="uppercase">Il tuo biglietto</h1>
-                <h6>DETTAGLIO PASSEGGERI</h6>
-                <div class="col">
-                    <div class="row">
-                        <div class="col">
-                            <div class="bg-secondary">
-                                <h6 class="text-uppercase">Nome Passeggero</h6>
-                                <span id="nameSurnameIns"></span>
+            <h2 class="text-uppercase">Il tuo biglietto</h2>
+            <div class="bg-light">
+                <div class="row">
+                    <h6 class="text-uppercase">Dettaglio passeggeri</h6>
+                    <div class="col">
+                        <div class="row">
+                            <div class="col">
+                                <div class="bg-secondary">
+                                    <h6 class="text-uppercase mb-5">Nome Passeggero</h6>
+                                    <span id="nameSurnameIns"></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <h6>Offerta</h6>
-                    <span class="typeOfTicket"></span>
-                </div>
-                <div class="col">
-                    <h6>Carrozza</h6>
-                    <span class="cabNumGenerator"></span>
-                </div>
-                <div class="col">
-                    <h6>Codice CP</h6>
-                    <span class="codeGenerator"></span>
-                </div>
-                <div class="col">
-                    <h6>Costo biglietto</h6>
-                    <span class="TicketPrice"></span>
+                    <div class="col">
+                        <h6 class="mb-5">Offerta</h6>
+                        <span class="typeOfTicket"></span>
+                    </div>
+                    <div class="col">
+                        <h6 class="mb-5">Carrozza</h6>
+                        <span class="cabNumGenerator"></span>
+                    </div>
+                    <div class="col">
+                        <h6 class="mb-5">Codice CP</h6>
+                        <span class="codeGenerator"></span>
+                    </div>
+                    <div class="col">
+                        <h6 class="mb-5">Costo biglietto</h6>
+                        <span class="ticketPriceIntoCard"></span>
+                    </div>
                 </div>
             </div>
         </div>
